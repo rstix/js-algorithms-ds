@@ -9,7 +9,8 @@
 // factorial(7) // 5040
 
 function factorial(k) {
-  if (k === 0) return 1;
+  if (k < 0) return 0;
+  if (k <= 0) return 1;
   return k * factorial(k - 1);
 }
 
